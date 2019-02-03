@@ -1,0 +1,4 @@
+~F1.S: R1 <- in1, R2 <- in2, QR <- 0, V <- 0, Err <- 0, R <- 0, Q <- 0, F1 <- 1
+F1.~OR(R2): Err <- 1, F1 <- 0, V <- 1
+F1.~L(R1, R2): QR <- QR + 1, R1 <- R1 - R2
+F1.L(R1, R2).OR(R2): V <- 1, Q <- QR, R <- R1, F1 <- 0, Err <- 0
